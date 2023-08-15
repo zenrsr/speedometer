@@ -14,17 +14,19 @@
   color: #ffffff;
   font-size: 50px;
   align-self: center;
+  margin: 10px;
 }
 .info {
   color: #ffffff;
-  font-size: 35px;
   align-self: center;
   font-weight: 700;
+  margin: 10px;
 }
 .mini-info {
   color: #cbd5e1;
   font-size: 20px;
   align-self: center;
+  margin: 10px;
 }
 .button {
   width: 160px;
@@ -32,6 +34,7 @@
   border-radius: 12px;
   padding: 10px;
   margin: 20px;
+  cursor: pointer;
 }
 .accelerate {
   color: #ffffff;
@@ -51,9 +54,11 @@
   margin-bottom: 40px;
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
 .speed-img {
-  height: 400px;
-  width: 690px;
+  height: 500px;
+  width: 800px;
   align-self: center;
+  margin: 10px;
 }

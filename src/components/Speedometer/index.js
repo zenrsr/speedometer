@@ -6,20 +6,27 @@ class Speedometer extends Component {
   state = {count: 0}
 
   increase = () => {
-    this.setState(prev => ({
-      count: prev.count + 10,
-    }))
+    const {count} = this.state
+
+    if (count < 200) {
+      this.setState(prev => ({
+        count: prev.count + 10,
+      }))
+    }
   }
 
   decrease = () => {
-    this.setState(prev => ({
-      count: prev.count - 10,
-    }))
+    const {count} = this.state
+
+    if (count < 0) {
+      this.setState(prev => ({
+        count: prev.count - 10,
+      }))
+    }
   }
 
   render() {
     const {count} = this.state
-
     return (
       <div className="container">
         <h1 className="heading">Speedometer</h1>
@@ -28,8 +35,8 @@ class Speedometer extends Component {
           alt="speedometer"
           className="speed-img"
         />
-        <p className="info">Speed is {count}mph</p>
-        <p className="mini-info">Min Limit is 0mph and Max Limit is 200mph</p>
+        <h1 className="info">Speed is {count}mph</h1>
+        <p className="mini-info">Min Limit is 0mph, Max Limit is 200mph</p>
         <div className="button-container">
           <button className="accelerate button" onClick={this.increase}>
             Accelerate
