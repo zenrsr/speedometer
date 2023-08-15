@@ -1,0 +1,59 @@
+.container {
+  background-color: #07080c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  width: auto;
+}
+.heading {
+  color: #ffffff;
+  font-size: 50px;
+  align-self: center;
+}
+.info {
+  color: #ffffff;
+  font-size: 35px;
+  align-self: center;
+  font-weight: 700;
+}
+.mini-info {
+  color: #cbd5e1;
+  font-size: 20px;
+  align-self: center;
+}
+.button {
+  width: 160px;
+  height: 40px;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 20px;
+}
+.accelerate {
+  color: #ffffff;
+  background-color: #0b69ff;
+  border-width: 0px;
+}
+.brake {
+  color: #94a3b8;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #94a3b8;
+  border-width: 3px;
+}
+.button-container {
+  padding: 10px;
+  align-self: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.speed-img {
+  height: 400px;
+  width: 690px;
+  align-self: center;
+}
